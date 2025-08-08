@@ -22,11 +22,9 @@ def download_stock_data(tickers, start_date, end_date):
         threads=True
     )
 
-    # Organizovanje podataka
     stock_data = {}
 
     if len(tickers) == 1:
-        # Ako je samo jedan ticker
         ticker = tickers[0]
         stock_data[ticker] = {
             'Open': data['Open'],
@@ -36,7 +34,6 @@ def download_stock_data(tickers, start_date, end_date):
             'Volume': data['Volume']
         }
     else:
-        # Više tickera
         for ticker in tqdm(tickers, desc="Organizovanje podataka"):
             try:
                 stock_data[ticker] = {
@@ -58,18 +55,14 @@ def create_master_dataset(stock_data):
     all_dataframes = []
 
     for ticker, ticker_data in stock_data.items():
-        # Kreiranje DataFrame-a za ticker
         df = pd.DataFrame(ticker_data)
 
-        # Dodavanje prefiksa ticker-a u nazive kolona
         df.columns = [f'{ticker}_{col}' for col in df.columns]
 
         all_dataframes.append(df)
 
-    # Kombinovanje svih DataFrame-a
     master_df = pd.concat(all_dataframes, axis=1)
 
-    # Uklanjanje redova gde su svi podaci NaN
     master_df = master_df.dropna(how='all')
 
     return master_df
