@@ -10,7 +10,6 @@ warnings.filterwarnings('ignore')
 
 
 def download_stock_data(tickers, start_date, end_date):
-    """Preuzima osnovne dnevne podatke za tickere"""
     print(f"Preuzimanje podataka za {len(tickers)} akcija...")
     print(f"Period: {start_date.strftime('%Y-%m-%d')} do {end_date.strftime('%Y-%m-%d')}")
 
