@@ -26,7 +26,7 @@ sugary_df = pd.read_csv("/Users/danny/PycharmProjects/CompFinProject/datasets/st
 
 filtered_sugary_df = sugary_df[~sugary_df['Ime'].isin(deleted_tickers)]
 
-filtered_sugary_df.to_csv("cleaned_summary.csv", index=False)
+filtered_sugary_df.to_csv("clean_output.csv", index=False)
 print("Filtered summary saved.")
 
 
