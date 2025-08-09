@@ -104,6 +104,16 @@ Date,MMM_Open,MMM_High,MMM_Low,MMM_Close,MMM_Volume
   - portfolio89041
   - portfolio55092
 
+### Frontend Home 
+<img width="1469" height="840" alt="Screenshot 2025-08-09 at 13 25 05" src="https://github.com/user-attachments/assets/6f591268-0387-47d5-aeaf-d85b637faf8a" />
 
+### Lowest Volatility
+<img width="1050" height="744" alt="Screenshot 2025-08-09 at 13 27 20" src="https://github.com/user-attachments/assets/d874f74c-80bd-4737-894e-48f677bbe2cb" />
+
+### Highest Return
+<img width="1061" height="774" alt="Screenshot 2025-08-09 at 13 28 09" src="https://github.com/user-attachments/assets/a0c5a2a5-51e1-425f-8916-75b56e8dd679" />
+
+### High Sharpe Ration
+<img width="1047" height="734" alt="Screenshot 2025-08-09 at 13 28 50" src="https://github.com/user-attachments/assets/a72a05ed-dd60-4f2a-b560-7b61d789d29f" />
 
 
