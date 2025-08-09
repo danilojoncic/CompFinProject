@@ -138,3 +138,140 @@ Date: Sat, 09 Aug 2025 11:47:07 GMT
   "companyName": "Apple Inc."
 }
 ```
+
+
+```http
+GET http://127.0.0.1:8080/api/stock/all
+
+{
+    "id": 1,
+    "ticker": "A",
+    "companyName": "Agilent Technologies, Inc."
+  },
+  {
+    "id": 2,
+    "ticker": "AAPL",
+    "companyName": "Apple Inc."
+  },
+  {
+    "id": 3,
+    "ticker": "ABBV",
+    "companyName": "AbbVie Inc."
+  }
+```
+
+```http
+GET http://127.0.0.1:8080/api/portfolio/portfolio9999
+
+{
+  "code": 200,
+  "data": {
+    "id": 9999,
+    "name": "portfolio9999",
+    "stocks": [
+      {
+        "id": 221,
+        "ticker": "IP",
+        "companyName": "International Paper Company"
+      },
+      {
+        "id": 290,
+        "ticker": "MPWR",
+        "companyName": "Monolithic Power Systems, Inc."
+      },
+      {
+        "id": 148,
+        "ticker": "ENPH",
+        "companyName": "Enphase Energy, Inc."
+      },
+      {
+        "id": 385,
+        "ticker": "STLD",
+        "companyName": "Steel Dynamics, Inc."
+      }
+    ]
+  }
+}
+```
+
+```http
+GET http://127.0.0.1:8080/api/portfolio/stat/todate/portfolio1234/2016-05-17
+
+{
+  "startDate": "2016-05-17",
+  "endDate": "2025-08-09",
+  "totalReturn": -100.0
+}
+```
+
+```http
+GET http://127.0.0.1:8080/api/portfolio/stat/portfolio33333/2016-07-02
+{
+  "dailyReturn": -100.0,
+  "date": "2016-07-02"
+}
+```
+
+```http
+POST http://127.0.0.1:8080/api/portfolio/create
+Content-Type: application/json
+
+{
+  "name": "My New Portfolio",
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "TSLA"
+  ]
+}
+
+
+
+
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 09 Aug 2025 11:57:15 GMT
+
+{
+  "code": 201,
+  "data": {
+    "id": 100001,
+    "name": "My New Portfolio",
+    "stocks": [
+      {
+        "id": 294,
+        "ticker": "MSFT",
+        "companyName": "Microsoft Corporation"
+      },
+      {
+        "id": 191,
+        "ticker": "GOOGL",
+        "companyName": "Alphabet Inc."
+      },
+      {
+        "id": 31,
+        "ticker": "AMZN",
+        "companyName": "Amazon.com, Inc."
+      },
+      {
+        "id": 2,
+        "ticker": "AAPL",
+        "companyName": "Apple Inc."
+      },
+      {
+        "id": 415,
+        "ticker": "TSLA",
+        "companyName": "Tesla, Inc."
+      }
+    ]
+  }
+}
+```
+
+
