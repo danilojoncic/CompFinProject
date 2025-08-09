@@ -74,6 +74,36 @@ Date,MMM_Open,MMM_High,MMM_Low,MMM_Close,MMM_Volume
 <img width="965" height="621" alt="Screenshot 2025-08-09 at 12 54 17" src="https://github.com/user-attachments/assets/25d0ff66-4b1b-4618-bf02-ad13f49b9901" />
 
 ### Stock picks for 2017
-<img width="633" height="421" alt="Screenshot 2025-08-09 at 12 55 54" src="https://github.com/user-attachments/assets/fb9cabf0-1b95-456b-8e07-732f498f83a3" />
+<img width="651" height="414" alt="Screenshot 2025-08-09 at 13 18 06" src="https://github.com/user-attachments/assets/694e5fe3-b72b-4995-b7b5-6ad2c7e9edd7" />
+
+- **top_sharpe:**
+  - portfolio43553
+  - portfolio57865
+  - portfolio74904
+  - portfolio51032
+  - portfolio24638
+
+- **top_return:**
+  - portfolio89266
+  - portfolio38655
+  - portfolio55587
+  - portfolio1058
+  - portfolio45402
+
+- **top_low_vol:**
+  - portfolio70830
+  - portfolio43061
+  - portfolio2056
+  - portfolio75113
+  - portfolio54420
+
+- **ML picks (in-between):**
+  - portfolio36538
+  - portfolio47829
+  - portfolio58745
+  - portfolio89041
+  - portfolio55092
+
+
 
 
