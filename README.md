@@ -278,6 +278,7 @@ Date: Sat, 09 Aug 2025 11:57:15 GMT
 - Written ML model code and not one taken from the internet
 - Fully connected Front and Back
 - Animated Plot in the Front
+- 27 Hours in a single day
 
 
 
