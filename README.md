@@ -119,4 +119,22 @@ Date,MMM_Open,MMM_High,MMM_Low,MMM_Close,MMM_Volume
 ### Backend (Spring Boot 4.0.0, H2 Database (write file mode), Gradle build)
 <img width="1249" height="613" alt="Screenshot 2025-08-09 at 13 30 14" src="https://github.com/user-attachments/assets/1b27eebc-dfc3-48cc-87d7-aad2b46de5d6" />
 
+### Endpoints and Responses
+```http
+GET http://127.0.0.1:8080/api/stock/ticker/AAPL
 
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 09 Aug 2025 11:47:07 GMT
+```http
+```json
+{
+  "id": 2,
+  "ticker": "AAPL",
+  "companyName": "Apple Inc."
+}
+```
