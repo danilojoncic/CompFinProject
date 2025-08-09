@@ -1,5 +1,5 @@
 ## CompFin Project Presentation (Only images so far)
-
+"Ideally, it should work, but it was done haphazardly in a few hours late at night."
 
 
 
@@ -273,5 +273,11 @@ Date: Sat, 09 Aug 2025 11:57:15 GMT
   }
 }
 ```
+
+### Potential Improvements (Things missing)
+- Written ML model code and not one taken from the internet
+- Fully connected Front and Back
+- Animated Plot in the Front
+
 
 
