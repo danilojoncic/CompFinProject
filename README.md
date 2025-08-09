@@ -1,5 +1,8 @@
 ## CompFin Project Presentation (Only images so far)
 "Ideally, it should work, but it was done haphazardly in a few hours late at night."
+The idea of the project is to create a dataset from Yahoo Finance for the last 10 years (2015-2025), afterwards we create 100 000 random filled portfolios (2 to 10 stocks inside them)
+based on the dataset of opening,closing,high,low and volume for each stock for each working day we managed to compute the Sharpe Ratio, Returns, Volatility for those 100 000 portfolios. With that knowledge we can plot that data and pick the portfolios with the best parameters meaning choosing the top 5 with the best or highest Sharpe Ratio, Highest Returns, and Lowest Volatility in 2017. There was the intention of using a ML model (Linear Regression that tries to predict the returns or other parameters and then use the portfolios that had the highest accuracy, but we ran out of time and i am writting this as i eat lunch) Instead of creating our own model we just wrote a function to choose the inbetween portfolios comapred to the other 15. Now having that the next step is to create a web app that would allow the user to create their own portfolio and compare it to the work of those cherry picked portfolios on the next 6 years (2018-2024). We also ran out of time do fully connect that, but the backend is done and is working, with the database filled and the relational model used. 
+If we only had one more day...
 
 
 
