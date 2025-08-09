@@ -1,0 +1,75 @@
+﻿body 						{background-image:url(23456.jpg);
+							background-repeat:no-repeat ;
+							background-attachment:fixed;
+							background-size:100% 100%;
+							text-align: center;
+							color:white;
+							font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
+
+html 						{height:100%; width:100%;}
+
+
+h3 							{margin:100px 100px;
+							 }
+
+h2 							{margin:100px 100px }
+
+h1 							{text-align:center;
+							}
+
+header						{background-image:url(hex3.jpg);
+							background-size:100% 100%;
+							margin:0 ;}
+
+nav							{margin:0 auto; 
+							padding:0px; 
+							height:60px; 
+							position:absolute; 
+							left:24%; 
+							top:17% }
+
+nav ul li 					{list-style-type:semi-expanded; 
+							float:left}
+
+nav ul li a 				{display:block; 
+							width:200px; 
+							padding:5px 10px; 
+							background-color:MidnightBlue; 
+							color:white; 
+							text-decoration:s;}
+		
+nav ul li ul 				{width:100px; 
+							background-color:Gold; 
+							display:none;}
+
+nav ul li:hover ul 			{display:block; 
+							position:absolute; 
+							margin:0; 
+							padding:0px;}
+
+nav ul li:hover li 			{float:none;}
+
+nav ul li ul li a 			{ text-decoration:italic; 
+							color:Gold; 
+							background-color:royalblue; 
+							border-bottom:1px solid MidnightBlue; }
+
+nav ul li ul li a:hover		{background-color: royalblue;}
+
+
+
+/*GROW*/
+.grow img 					{ width: 400px;
+ 
+							-webkit-transition: all 1s ease;
+							-moz-transition: all 1s ease;
+							-o-transition: all 1s ease;
+							-ms-transition: all 1s ease;
+							transition: all 1s ease;
+}
+ 
+.grow img:hover 			{width: 600px;}
+  
+
+
+
