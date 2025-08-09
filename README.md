@@ -116,4 +116,7 @@ Date,MMM_Open,MMM_High,MMM_Low,MMM_Close,MMM_Volume
 ### High Sharpe Ration
 <img width="1047" height="734" alt="Screenshot 2025-08-09 at 13 28 50" src="https://github.com/user-attachments/assets/a72a05ed-dd60-4f2a-b560-7b61d789d29f" />
 
+### Backend (Spring Boot 4.0.0, H2 Database (write file mode), Gradle build)
+<img width="1249" height="613" alt="Screenshot 2025-08-09 at 13 30 14" src="https://github.com/user-attachments/assets/1b27eebc-dfc3-48cc-87d7-aad2b46de5d6" />
+
 
