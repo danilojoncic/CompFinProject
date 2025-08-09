@@ -47,8 +47,22 @@ def get_top_portfolios(results_df, top_n=5):
     }
     return top_picks
 
+def get_ml_picks(results_df, top_picks, ml_n=5):
+    # Combine all top portfolios from existing categories
+    top_all = set(top_picks["top_sharpe"]) | set(top_picks["top_return"]) | set(top_picks["top_low_vol"])
 
-def plot_portfolios(results_df, year, top_picks):
+    # Select portfolios NOT in top_all
+    remaining_df = results_df[~results_df["portfolio"].isin(top_all)]
+
+    # Sort remaining by sharpe_ratio descending (you can choose another metric or composite)
+    ml_candidates = remaining_df.sort_values("sharpe_ratio", ascending=False)
+
+    # Pick top ml_n from these as ML picks
+    ml_picks = ml_candidates.head(ml_n)["portfolio"].tolist()
+    return ml_picks
+
+
+def plot_portfolios(results_df, year, top_picks, ml_picks):
     plt.figure(figsize=(10, 6))
     plt.scatter(results_df["annual_return"], results_df["sharpe_ratio"],
                 alpha=0.3, color="lightgray", label="All Portfolios")
@@ -56,6 +70,7 @@ def plot_portfolios(results_df, year, top_picks):
     top5_sharpe = results_df[results_df["portfolio"].isin(top_picks["top_sharpe"])]
     top5_return = results_df[results_df["portfolio"].isin(top_picks["top_return"])]
     top5_low_vol = results_df[results_df["portfolio"].isin(top_picks["top_low_vol"])]
+    ml5 = results_df[results_df["portfolio"].isin(ml_picks)]
 
     plt.scatter(top5_sharpe["annual_return"], top5_sharpe["sharpe_ratio"],
                 color="red", s=80, label="Top 5 Sharpe")
@@ -63,6 +78,8 @@ def plot_portfolios(results_df, year, top_picks):
                 color="green", s=80, label="Top 5 Return")
     plt.scatter(top5_low_vol["annual_return"], top5_low_vol["sharpe_ratio"],
                 color="blue", s=80, label="Top 5 Lowest Volatility")
+    plt.scatter(ml5["annual_return"], ml5["sharpe_ratio"],
+                color="purple", s=80, label="Top 5 ML (In-between)")
 
     plt.xlabel("Annualized Return")
     plt.ylabel("Sharpe Ratio")
@@ -85,12 +102,14 @@ def main(year=2017):
     results_df = calculate_portfolio_metrics(portfolios, df_year)
 
     top_picks = get_top_portfolios(results_df, top_n=5)
+    ml_picks = get_ml_picks(results_df, top_picks, ml_n=5)
 
     print(f"Top portfolios in {year}:")
     for category, names in top_picks.items():
         print(f"{category}: {names}")
+    print(f"ML picks (in-between): {ml_picks}")
 
-    plot_portfolios(results_df, year, top_picks)
+    plot_portfolios(results_df, year, top_picks, ml_picks)
 
 
 if __name__ == "__main__":
