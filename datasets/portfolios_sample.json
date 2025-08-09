@@ -1,0 +1,62 @@
+{
+  "portfolio1": [
+    {
+      "ticker": "CMS",
+      "name": "CMS Energy Corporation"
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc."
+    },
+    {
+      "ticker": "ESS",
+      "name": "Essex Property Trust, Inc."
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc."
+    }
+  ],
+  "portfolio2": [
+    {
+      "ticker": "PHM",
+      "name": "PulteGroup, Inc."
+    },
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies, Inc."
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger N.V."
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown, Inc."
+    },
+    {
+      "ticker": "AVY",
+      "name": "Avery Dennison Corporation"
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc."
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant, Inc."
+    },
+    {
+      "ticker": "CZR",
+      "name": "Caesars Entertainment, Inc."
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc."
+    }
+  ]
+}
