@@ -278,7 +278,7 @@ Date: Sat, 09 Aug 2025 11:57:15 GMT
 ```
 
 ### Potential Improvements (Things missing)
-- Written ML model code and not one taken from the internet
+- Written ML model code and not fake inbetween ones
 - Fully connected Front and Back
 - Animated Plot in the Front
 - 27 Hours in a single day
