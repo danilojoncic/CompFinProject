@@ -130,8 +130,8 @@ Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
 Date: Sat, 09 Aug 2025 11:47:07 GMT
-```http
-```json
+
+
 {
   "id": 2,
   "ticker": "AAPL",
